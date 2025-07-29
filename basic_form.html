@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms</title>
+    <style>
+        td{
+            text-align:center;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <table >
+        <form action="" method="post">
+            <tr>
+                <td>
+                    <label for="name">Name : </label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="n"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+            <label for="roll">roll number : </label>
+            </td>
+            <td>
+            <input type="number" id="roll" name="rollnum"><br><br>
+            </td>
+            </tr>
+            <tr>
+                <td>
+            <label for="email"> email : </label>
+            </td>
+            <td>
+            <input type="email" id="email" name="email"><br><br>
+            </td>
+            </tr>
+            <tr>
+                <td>
+            <label for="phn">Phone number : </label>
+            </td>
+            <td>
+            <input type="number" id="phn" name="phone"><br><br>
+            </td>
+            </tr>
+            <tr>
+                <td>
+            <label for="gender"> Gender : </label>
+                </td>
+                <td>
+            <input type="radio" id="gender" name="gender" value="male" checked>male
+            <input type="radio" id="gender" name="gender" value="female">female<br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+            <label for="branch">branch</label>
+            </td>
+            <td>
+            <select id="branch" name="branch">
+                <option value="IT">IT</option>
+                <option value="CSE">CSE</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="MECHANICAL">MECHANICAL</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+            </select><br><br>
+            </td>
+            </tr>
+            <tr>
+                <td>
+            <input type="submit">
+            </td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
