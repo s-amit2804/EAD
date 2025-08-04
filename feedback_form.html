@@ -7,10 +7,12 @@
                 padding: 17px;
             }
         </style>
+        <link rel="stylesheet" href="feedback_form.css">
     </head>
     <body>
-        <table>
+        
             <form action="#" method="get">
+                <table>
                 <tr>
                     <td>
                         <label for="name">Name : </label>
@@ -32,7 +34,7 @@
                         <label for="msg">Feedback message</label>
                     </td>
                     <td>
-                        <textarea name="msg"></textarea>
+                        <textarea name="msg" rows="5" cols="22"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -45,12 +47,10 @@
                         <input type="radio" name="Review" id="unsatisfied" value = "unsatisfied">unsatisfied
                     </td>
                 </tr>
-                <tr>
-                    <td>
+                </table>
                         <input type="submit"
-                    </td>
-                </tr>
+                    
             </form>
-        </table>
+        
     </body>
 </html>

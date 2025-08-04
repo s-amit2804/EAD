@@ -1,0 +1,28 @@
+
+            h1{
+                text-align: center;
+                margin-top: 100px;
+            }
+            table, th, td{
+                border: black solid 2px;
+                border-collapse: collapse;
+                padding-left: 25px;
+                padding-right: 25px;
+                text-align: center;
+            }
+            table{
+                margin: auto;
+                width: 80%;
+
+            }
+            th, #time{
+                background-color: #04AA6D;
+                color: aliceblue;
+                height: 30px;
+            }
+            tr:hover{
+                background-color: rgb(163, 163, 163);
+            }
+            tr:nth-child(odd){
+                background-color: rgb(201, 201, 201);
+            }

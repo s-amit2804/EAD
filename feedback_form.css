@@ -1,0 +1,18 @@
+input[type="submit"]{
+    width: 150px;
+    padding:1%;
+    margin-left:39vw;
+    -webkit-text-fill-color: rgb(2, 119, 119);
+    background-color: rgb(149, 242, 220);
+}
+*{
+    color: rgb(72, 72, 191);
+}
+*{
+    font: 1em sans-serif;
+}
+table{
+    margin:auto;
+    white-space: nowrap;
+    text-align: center;
+}
