@@ -3,22 +3,90 @@
     <head>
         <title>Resume</title>
         <style>
-            tr,td,th{
-                border: 1px solid black;
-                padding: 8px;
-                
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f5f5f5;
+                color: #333;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
             }
-            table{
-                margin: auto;
+            h1 {
+                text-align: center;
+                color: #2c3e50;
+                margin-bottom: 20px;
+            }
+            h3 {
+                text-align: center;
+                color: #3498db;
+                margin-bottom: 20px;
+            }
+            a {
+                color: #e74c3c;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: #c0392b;
+            }
+            table {
+                border-collapse: collapse;
+                width: 80%;
+                margin: 20px auto;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            
+            th, td {
+                border: 1px solid #95a5a6;
+                padding: 12px;
+                text-align: left;
+            }
+            
+            th {
+                background-color: #3498db;
+                color: white;
+                font-weight: bold;
+            }
+            tr:nth-child(even) {
+                background-color: #ecf0f1;
+            }
+
+            tr:hover {
+                background-color: #d6eaf8;
+            }
+            ul {
+                width: fit-content;
+                margin: 30px auto;
+                padding-left: 0;
+                text-align: left;
+            }
+            li {
+                margin-bottom: 8px;
+                color: #2c3e50;
+            }
+            p {
+                max-width: 800px;
+                margin: 30px auto;
+                padding: 15px;
+            }
+            .resume {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: white;
+                border-radius: 10px;
             }
         </style>
     </head>
     <body>
-        <h1 style="text-align: center;">Amit Kumar</h1>
-        <h3 style="text-align: center;">Contact : 
+        <div class="resume">
+        <h1>Amit Kumar</h1>
+        <h3>Contact : 
         <a href="mailto:amitkumarsheoran092@gmail.com">mail</a>
         </h3>
-        <table title="Education Details" style="border: 2px solid black; border-collapse: collapse;">
+        <h3>Education</h3>
+        <table title="Education Details">
             <tr>
                 <th>School</th>
                 <td>Raghunatha High School</td>
@@ -51,16 +119,18 @@
             </tr>
 
         </table>
-        <span style="text-align: center;">
-        <ul style="list-style-position: inside;">
+        <span>
+        <h3>Skills</h3>
+        <ul>
             <li>DSA</li>
             <li>OOPS</li>
             <li>Operating Sys</li>
             <li>DBMS</li>
         </ul>
         </span>
-        <p style="text-align: center;">
+        <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum sed dolor eius omnis sapiente iure aspernatur impedit facilis blanditiis, assumenda corporis, ipsam libero itaque expedita perferendis. Sint magni dolorem ex!
         </p>
+        </div>
     </body>
 </html>
