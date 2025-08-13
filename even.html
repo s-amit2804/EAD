@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Even Numbers</title>
+  </head>
+  <body>
+    <h3>Even numbers between 1 to 50</h3>
+    <button onclick="EvenNums()">Print</button>
+    <p id="res"></p>
+
+    <script>
+      function EvenNums() {
+        let evens =[];
+        for (let i = 2; i <= 50; i++){
+            if(i%2==0) evens.push(i);
+        }
+        document.getElementById("res").innerHTML = evens.join(", ");
+      }
+    </script>
+  </body>
+</html>

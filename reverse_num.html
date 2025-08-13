@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse Num</title>
+</head>
+<body>
+    <h2> Reverse Given Number</h2>
+    <input type="number" id="num" placeholder="Enter a number">
+    <button onclick="Reverse()">Generate Table</button>
+    <p id="result"></p>
+
+    <script>
+        function Reverse(){
+            let num=document.getElementById("num").value;
+            let rev=0;
+
+            while (num > 0) {
+                let digit = num % 10;         
+                rev = rev * 10 + digit; 
+                num = Math.floor(num / 10);    
+            }
+
+            document.getElementById("result").innerHTML=rev;
+        }
+    </script>
+</body>
+</html>

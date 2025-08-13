@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial</title>
+</head>
+<body>
+    <h2> Factorial of a given Number</h2>
+    <input type="number" id="num" placeholder="Enter a number">
+    <button onclick="factorial()">Get Factorial</button>
+    <p id="result"></p>
+
+    <script>
+        function factorial(){
+            let num=document.getElementById("num").value;
+            let fact=1;
+            while(num>=1){
+                fact*=num;
+                num--;
+            }
+            document.getElementById("result").innerHTML=fact;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Nums</title>
+</head>
+<body>
+    <h2>Find sum of nums from 1 to n</h2>
+    <input type="number" id="num" placeholder="Enter a number">
+    <button onclick="FindSum()">Sum</button>
+
+    <p id="sum"></p>
+    <script>
+        function FindSum(){
+            let n=Number(document.getElementById("num").value);
+            let result=`Total sum = ${n*(n+1)/2}`;
+
+            document.getElementById("sum").innerHTML=result;
+        }
+    </script>
+</body>
+</html>

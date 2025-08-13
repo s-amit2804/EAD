@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fibonacci</title>
+</head>
+<body>
+    <h3>Display Fibonacci upto n terms</h3>
+    <input type="number" id="num" placeholder="Enter a number">
+    <button onclick="fibonacci()">Display</button>
+    <p id="res"></p>
+    <script>
+        function fibonacci(){
+            let n = document.getElementById("num").value;
+            let a = 0, b = 1;
+            let res = "";
+
+            for (let i = 1; i <= n; i++) {
+                res += ` ${a}`;
+                let next = a + b;
+                a = b;
+                b = next;
+            }
+
+            document.getElementById("res").innerHTML = res;
+        }
+    </script>
+    </script>
+</body>
+</html>
